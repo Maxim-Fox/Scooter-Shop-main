@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Контакты</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="contacts.css" />
+</head>
+
+<body>
+	<section class="section-sm bg-default">
+		<div class="container">
+			<div class="text-center">
+				<h1>Контакты</h1>
+			</div>
+			<div class="row row-40">
+				<div class="col-md-1 col-lg-1">
+					<h3 class="mb">Контактные данные:</h3>
+					<ul>
+						<li class="pb">
+							<dl class="list-terms-minimal">
+								<dt>Адрес:</dt>
+								<dd>г.Москва, ул.N, д.n</dd>
+							</dl>
+						</li>
+						<div class="divider"></div>
+						<li class="py">
+							<dl class="list-terms-minimal">
+								<dt>Телефон:</dt>
+								<dd>
+									<ul class="list-semicolon">
+										<li>8 (XXX)-XXX-XX-XX</li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<div class="divider"></div>
+							<li class="py">
+								<dl class="list-terms-minimal">
+									<dt>E-mail:</dt>
+									<dd>super-scooter@mail.ru</dd>
+								</dl>
+							</li>
+						<div class="divider"></div>
+							<li class="py">
+								<dl class="list-terms-minimal">
+									<dt>График работы:</dt>
+									<dd>Звонки и заявки круглосуточно. <br>Офис работает с 8:00 до 20:00</dd>
+								</dl>
+							</li>
+					</ul>	
+				</div>
+				<div class="col-md-2 col-lg-2">
+					<h3 class="mb">Оставьте заявку и мы свяжемся с вами</h3>
+					<!--Mailform-->
+					<form>
+						<div class="form-wrap">
+							<input class="form-input" id="contact-name" type="text" name="name" placeholder="Имя" required="">
+						</div>
+                
+						<div class="form-wrap">
+							<input class="form-input" id="contact-phone" type="tel" name="phone" placeholder="Телефон" minlength="7" required="">       
+						</div>
+						<div class="form-wrap">
+							<textarea class="form-input" id="contact-message" name="message" placeholder="Сообщение"></textarea>
+						</div>
+						<button class="button button-primary" name="submit" type="submit">Отправить</button>
+					</form>
+				</div>
+			</div>
+        </div>
+    </section>
+</body>	
+</html>

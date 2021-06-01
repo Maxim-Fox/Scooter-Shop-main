@@ -1,0 +1,346 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, 
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, 
+ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, 
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1em;
+    vertical-align: baseline;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	background: url(scooter_back.jpg);
+}
+.HTMLDescription_root{
+	line-height: inherit;
+}
+.AppDefaultLayout_container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+/*Самый основной квадрат, в котором находятся остальные квадраты с картинками самокатов*/
+.AppDefaultLayout_content { 
+    margin: 0px 40px 40px 40px;
+    z-index: 1;
+}
+.AppDefaultLayout_spinnerContainer {
+    top: 20px !important;
+    z-index: 2;
+    position: fixed !important;
+}
+.DesktopPlacePageRestaurant_content {
+    border: solid 1px #eeeeee;
+    padding-top: 0px;
+    padding-right: 80px;
+    padding-bottom: 25px;
+    padding-left: 80px;
+    background: #f2f2f2;
+    border-top: none;
+    background-image: linear-gradient(to bottom, #ffffff, #f2f2f2 480px);
+}
+
+.DesktopPlacePageRestaurant_contentInner {
+    flex-grow: 1;
+    flex-basis: 100%;
+    flex-shrink: 0;
+}
+.DesktopPlacePageRestaurant_contentWrapper {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.DesktopPlacePageRestaurant_header {
+    flex: 1 0 100%;
+}
+.DesktopPlacePageRestaurant_root {
+    display: flex;
+}
+.UIMagicalImage_root {
+    background-size: 240px;
+    background-color: #f5f5f5;
+    background-position: center;
+}
+.UIMagicalImage_root.UIMagicalImage_loaded {
+    background-image: none;
+}
+.UIMagicalImage_image {
+    width: 100%;
+    height: 100%;
+}
+.UILoader_root {
+    position: relative;
+}
+.UIMagicalImage_root.UIMagicalImage_loaded {
+    background-image: none;
+}
+.UILoader_content {
+    transition: filter 0.2s linear;
+}
+.UILoader_backdrop {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    transition: opacity 0.2s linear;
+    pointer-events: none;
+    background-color: #fff;
+}
+
+.RestaurantPageMenuItem_priceAndCountWrapper {
+    font-size: 18px;
+    line-height: 1.39;
+    margin-bottom: 2px;
+}
+
+.RestaurantPageMenuItem_price {
+    margin-bottom: 2px;
+}
+
+.RestaurantPageMenuCategory_item {
+    width: 50%;
+    display: flex;
+}
+.RestaurantPageMenuCategory_items {
+    margin: 0 -20px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.RestaurantPageMenuCategory_itemWrapper {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+/*Сам маленький квадрат*/
+.RestaurantPageMenuItem_root {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    padding: 20px 20px;
+    position: relative;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+.RestaurantPageMenuItem_topLine {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+.RestaurantPageMenuItem_priceWrapper {
+    float: right;
+    min-width: 80px;
+    text-align: right;
+    margin-left: 10px;
+}
+.RestaurantPageMenuItem_title {
+    display: inline;
+    font-size: 18px;
+    line-height: 1.39;
+}
+.RestaurantPageMenuItem_weight {
+    color: #999999;
+    line-height: 1.39;
+    white-space: nowrap;
+}
+.RestaurantPageMenuItem_description {
+    color: #b0b0b0;
+    width: 100%;
+    overflow: hidden;
+    font-size: 15px;
+    margin-top: 8px;
+    line-height: 1.33;
+    overflow-wrap: break-word;
+}
+.RestaurantPageMenuItem_pictureContainer {
+    position: relative;
+    margin-top: 24px;
+}
+
+.RestaurantPageMenuItem_pictureImage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.RestaurantPageNavigationBar_root {
+    border: solid #eeeeee;
+    position: relative;
+    font-size: 16px;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,.05);
+    line-height: 70px;
+    border-width: 0 1px;
+    background-color: #ffffff;
+}
+.RestaurantPageNavigationBar_wrapper {
+    margin: 0 80px;
+    display: flex;
+}
+.RestaurantPageNavigationBar_categories {
+    height: 70px;
+    margin: 0 -16px;
+    overflow: hidden;
+}
+.RestaurantPageNavigationBar_category {
+    height: 70px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+    line-height: 70px;
+}
+.RestaurantPageNavigationBar_categorySelected.RestaurantPageNavigationBar_category {
+    box-shadow: inset 0 -4px 0 #fce000;
+}
+.RestaurantPageMenuCategory_count {
+    color: #b0b0b0;
+}
+.RestaurantPageMenuCategory_titleWrapper {
+    font-size: 24px;
+}
+.RestaurantPageMenuCategory_headerContent {
+    margin-right: auto;
+}
+.RestaurantPageMenuCategory_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.RestaurantPageMenuList_category {
+    padding: 20px 0;
+}
+.RestaurantPageMenuList_root{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1em;
+    vertical-align: baseline;
+}
+.RestaurantPageHeader_image {
+    background-size: cover;
+    background-position: center;
+}
+/*Картинка*/
+.RestaurantPageMenuItem_picture {
+    height: 560px;
+	width: 560px;
+	overflow: hidden;
+    border-radius: 4px;
+}
+
+.RestaurantPageMenuItem_pictureImage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+	.RestaurantPageMenuItem_weight {
+		color: #999999;
+		line-height: 1.39;
+		white-space: nowrap;
+		font-size: 12px;
+		padding-left: 20px;
+	}
+	.RestaurantPageMenuItem_priceAndCountWrapper {
+		font-size: 12px;
+		line-height: 1.39;
+		margin-bottom: 2px;
+	}
+	.RestaurantPageMenuItem_title {
+		display: inline;
+		font-size: 12px;
+		line-height: 1.39;
+	}
+	.RestaurantPageNavigationBar_wrapper {
+		margin: 0 40px;
+		display: flex;
+		justify-content: space-around;
+	}
+	.RestaurantPageNavigationBar_root {
+		border: solid #eeeeee;
+		position: relative;
+		font-size: 12px;
+		box-shadow: 0 1px 0 0 rgba(0,0,0,.05);
+		line-height: 35px;
+		border-width: 0 1px;
+		background-color: #ffffff;
+	}
+	.RestaurantPageNavigationBar_categories {
+		height: 35px;
+		margin: 0 -8px;
+		overflow: hidden;
+	}
+	.RestaurantPageNavigationBar_category {
+		height: 70px;
+		cursor: pointer;
+		display: inline-block;
+		padding: 0 2px;
+		line-height: 35px;
+	}
+	.DesktopPlacePageRestaurant_content {
+		padding-top: 0px;
+		padding-right: 30px;
+		padding-bottom: 15px;
+		padding-left: 30px;
+		background-image: linear-gradient(to bottom, #ffffff, #f2f2f2 480px);
+	}
+	.RestaurantPageMenuList_root {
+		font-size: 3px;
+		line-height: 1em;
+		vertical-align: baseline;
+	}
+	.RestaurantPageMenuCategory_titleWrapper {
+		font-size: 12px;
+	}
+	.RestaurantPageMenuCategory_itemWrapper {
+		flex-grow: 0;
+		flex-shrink: 1;
+		flex-basis: auto;
+		width: 100%;
+		display: flex;
+		padding-top: 0px;
+		padding-right: 10px;
+		padding-bottom: 15px;
+		padding-left: 10px;  
+	}
+	.RestaurantPageMenuItem_root {
+		flex-grow: 0;
+		flex-shrink: 1;
+		flex-basis: auto;
+		width: 100%;
+		cursor: pointer;
+		display: flex;
+		padding: 18px 20px;
+		position: relative;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		border-bottom-left-radius: 4px;
+		flex-direction: column;
+		background-color: #ffffff;
+	}
+	.RestaurantPageMenuCategory_item {
+		width: 100%;
+		display: flex;
+	}
+}

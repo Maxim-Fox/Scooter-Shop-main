@@ -1,0 +1,200 @@
+body{
+	margin: 0;
+	padding: 80px 80px 80px 80px;
+	background-image: url("scooter_back.jpg"); 
+	background-repeat: repeat;
+}
+ul li, ol li {
+    display: block;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+div {
+    display: block;
+}
+textarea.form-input {
+    height: 186px;
+    min-height: 55px;
+    max-height: 316px;
+    resize: vertical;
+}
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+input, button, select, optgroup, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.bg-default {
+    background-color: #ffffff;
+}
+.button-primary, .button-primary:focus {
+    color: #ffffff;
+    background-color: #693e3e;
+    border-color: #693e3e;
+}
+* + .button {
+    margin-top: 30px;
+	padding: 11px 30px;
+	font-size: 14px;
+	border: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    user-select: none;
+    transition: 250ms all ease-in-out;
+    border-radius: 10em;
+    box-shadow: inset 0px -4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+	justify-content: space-around; 
+}
+.col-md-1, .col-lg-1{
+    position: relative;
+    width: 50%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 100px;
+}
+
+.col-md-2, .col-lg-2{
+    position: relative;
+    width: 50%;
+    min-height: 1px;
+    padding-right: 100px;
+    padding-left: 15px;
+}
+
+.divider {
+    font-size: 0;
+    line-height: 0;
+}
+.divider::after {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background-color: #a7568d;
+}
+.form-wrap {
+    position: relative;
+    margin-top: 20px;
+}
+.form-input {
+    display: block;
+    width: 100%;
+    min-height: 55px;
+    padding: 14px 19px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -.02em;
+    color: #000000;
+    background-color: #ffffff;
+    background-image: none;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    transition: .3s ease-in-out;
+    border: 1px solid #c4c4c4;
+}
+.mb {
+    margin-bottom: 1.5rem !important;
+}
+.pb, .py {
+    padding-bottom: 1rem !important;
+}
+.py {
+    padding-bottom: 1rem !important;
+}
+.row-40 {
+    margin-bottom: -40px;
+}
+* + .row {
+    margin-top: 45px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.row-40 > * {
+    margin-bottom: 40px;
+}
+.section-sm {
+    padding: 50px 0;
+}
+.text-center {
+    text-align: center !important;
+}
+@media all and (max-width: 800px) {
+	body{
+		margin: 0;
+		padding: 40px 40px 40px 40px;
+	}
+	.col-md-1, .col-lg-1{
+		position: relative;
+		width: 50%;
+		padding-left: 20px;
+	}
+
+	.col-md-2, .col-lg-2{
+		position: relative;
+		width: 50%;
+		padding-right: 20px;
+	}
+}
+
+@media all and (max-width: 500px) {
+	body{
+		margin: 0;
+		padding: 40px 40px 40px 40px;
+	}
+	.col-md-1, .col-lg-1{
+		position: relative;
+		width: 100%;
+		padding-left: 15px;
+	}
+
+	.col-md-2, .col-lg-2{
+		position: relative;
+		width: 100%;
+		padding-right: 15px;
+	}
+}
+
+

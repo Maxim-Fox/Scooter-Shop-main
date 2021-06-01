@@ -1,0 +1,33 @@
+body{
+	padding: 0px 40px 40px 40px;
+	background: #E0FFFF;
+	font-size: 18px;
+}
+
+.first{
+	width: 465px;
+	height: 300px;
+}
+
+.second{
+	width: 505px;
+	height: 390px;
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+	.first{
+		width: 265px;
+		height: 150px;
+	}
+
+	.second{
+		width: 255px;
+		height: 190px;
+	}
+	
+	.third{
+		width: 255px;
+		height: 190px;
+	}
+}
